@@ -46,7 +46,7 @@ Built with **[Playwright](https://playwright.dev/) ^1.61.1** and the **@playwrig
 | **Locators** | CSS selectors, XPath, `getByRole`, `getByText`, `getByTestId`, `allInnerTexts` |
 | **Actions** | `fill()`, `click()`, `pressSequentially()`, `goto()` with `waitUntil` options |
 | **Session** | `storageState`, session persistence, auth reuse without login |
-| **Web Tables** | Dynamic XPath, `following-sibling::td`, `nth()`, pagination with `filter({ hasText })` |
+| **Web Tables** | Dynamic XPath, `following-sibling::td`, `preceding-sibling::td`, `nth()`, pagination with `filter({ hasText })` + `getByTestId("next-page")` + `isDisabled()` guard, employee management (delete by status) |
 | **Reporting** | Allure integration (`allure-playwright`), custom TTA HTML reporter, screenshots, video, traces |
 | **Test Structure** | `test.step()`, `testInfo.attach()`, tag filtering (`@P0`, `@smoke`, etc.) |
 
