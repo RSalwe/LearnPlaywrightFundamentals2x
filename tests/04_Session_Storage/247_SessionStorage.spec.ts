@@ -5,7 +5,7 @@ async function saveAdminSession() {
     let context = await browser.newContext();
     let page = await context.newPage();
 
-    await page.goto("https://app.vwo.com/#/login");
+    await page.goto("https://app.wingify.com/#/login");
     await page.waitForTimeout(5000);
 
     await page.fill("#login-username", "opg73@singleuseemail.site");
@@ -29,7 +29,7 @@ async function saveSession() {
     let context = await browser.newContext();
     let page = await context.newPage();
 
-    await page.goto("https://app.vwo.com/#/login");
+    await page.goto("https://app.wingify.com/#/login");
     await page.waitForTimeout(5000);
 
     await page.fill("#login-username", "opg73@singleuseemail.site");

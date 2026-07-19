@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
 
-test.setTimeout(120_000);
+test.setTimeout(60000);
 
 // Load saved session — already logged in
 test.use({
-    storageState: "./user-session.json"
+    storageState: "./users-session.json"
 });
 
 test.describe("VWO — session reuse", () => {
@@ -33,7 +33,7 @@ test.describe("VWO — session reuse", () => {
     test("go directly to settings — no login @P1 @regression", async ({ page }, testInfo) => {
 
         await test.step("Open VWO account settings using saved session", async () => {
-            await page.goto("https://app.wingify.com/#/settings/accounts/general?accountId=1227004");
+            await page.goto("https://app.wingify.com/#/settings/accounts/general?accountId=1227007");
             console.log("Open VWO account settings using saved session — still authenticated");
             await testInfo.attach("step-0-settings-loaded", {
                 body: await page.screenshot(),
