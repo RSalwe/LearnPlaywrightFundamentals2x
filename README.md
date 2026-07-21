@@ -15,7 +15,7 @@ Built with **[Playwright](https://playwright.dev/) ^1.61.1** and the **@playwrig
 │   ├── 05_Allure_Reporting/  # Allure integration, test steps, attachments, tags
 │   ├── 06_Multiple_Elements/ # allInnerTexts, locator lists, getByTestId
 │   ├── 07_WebTables/         # Dynamic XPath, following-sibling, pagination
-│   ├── 08-Page-Object-Model/ # POM pattern
+│   ├── 08_Web_Select_Frames-iframe/ # Standard, custom & async dropdowns, iframes
 │   ├── 09-Component-Testing/ # Component testing
 │   ├── 10-API-Testing/       # API testing
 │   ├── 11-Visual-Testing/    # Visual comparison testing
@@ -48,6 +48,7 @@ Built with **[Playwright](https://playwright.dev/) ^1.61.1** and the **@playwrig
 | **Session** | `storageState`, session persistence, auth reuse without login |
 | **Web Tables** | Dynamic XPath, `following-sibling::td`, `preceding-sibling::td`, `nth()`, pagination with `filter({ hasText })` + `getByTestId("next-page")` + `isDisabled()` guard, employee management (delete by status) |
 | **Reporting** | Allure integration (`allure-playwright`), custom TTA HTML reporter, screenshots, video, traces |
+| **Web Select / Dropdowns** | Standard `<select>`, custom dropdown picker, multi-select chips with remove, creatable/grouped/async search dropdowns |
 | **Test Structure** | `test.step()`, `testInfo.attach()`, tag filtering (`@P0`, `@smoke`, etc.) |
 
 ## Quick Start
