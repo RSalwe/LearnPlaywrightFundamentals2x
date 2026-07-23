@@ -16,8 +16,9 @@ Built with **[Playwright](https://playwright.dev/) ^1.61.1** and the **@playwrig
 │   ├── 06_Multiple_Elements/ # allInnerTexts, locator lists, getByTestId
 │   ├── 07_WebTables/         # Dynamic XPath, following-sibling, pagination
 │   ├── 08_Web_Select_Frames-iframe/ # Standard, custom & async dropdowns, iframes
-│   ├── 09-Component-Testing/ # Component testing
-│   ├── 10-API-Testing/       # API testing
+│   ├── 09_Iframe.spec.ts/    # Nested iframes, multi-frame handling
+│   ├── 10_Keyboard_Hover_Drag_Drop/ # Keyboard, hover, drag & drop
+│   ├── 11_JS_Alerts/         # JS Alert, Confirm, Prompt handling
 │   ├── 11-Visual-Testing/    # Visual comparison testing
 │   ├── 12-Debugging/         # Debugging techniques
 │   ├── 13-Trace-Viewer/      # Trace viewer
@@ -49,6 +50,9 @@ Built with **[Playwright](https://playwright.dev/) ^1.61.1** and the **@playwrig
 | **Web Tables** | Dynamic XPath, `following-sibling::td`, `preceding-sibling::td`, `nth()`, pagination with `filter({ hasText })` + `getByTestId("next-page")` + `isDisabled()` guard, employee management (delete by status) |
 | **Reporting** | Allure integration (`allure-playwright`), custom TTA HTML reporter, screenshots, video, traces |
 | **Web Select / Dropdowns** | Standard `<select>`, custom dropdown picker, multi-select chips with remove, creatable/grouped/async search dropdowns |
+| **Iframes** | Nested iframes, `frameLocator()`, multi-level frame chaining |
+| **Keyboard & Mouse** | `keyboard.press()`, `keyboard.type()`, `mouse.down/up/move()`, drag & drop via mouse events, `locator.dragTo()` |
+| **JS Alerts** | `dialog` events, `dialog.accept()`, `dialog.dismiss()`, JS Alert / Confirm / Prompt, `defaultValue()` |
 | **Test Structure** | `test.step()`, `testInfo.attach()`, tag filtering (`@P0`, `@smoke`, etc.) |
 
 ## Quick Start

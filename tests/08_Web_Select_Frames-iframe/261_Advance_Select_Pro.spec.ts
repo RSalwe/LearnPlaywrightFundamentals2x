@@ -20,6 +20,7 @@ test('Handling Advance Dropdown', async ({ page }) => {
     await page.getByText("api-testing", { exact: true }).click();
     await page.getByText("security", { exact: true }).click();
     await page.getByRole('button', { name: 'security' }).click();
+    //Below is to close the dropdown
     await page.keyboard.press("Escape");
 
     //④ Grouped — categorised options

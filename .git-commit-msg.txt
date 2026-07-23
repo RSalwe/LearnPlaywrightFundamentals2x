@@ -1,0 +1,11 @@
+Add JS Alerts (ch11), iframe, keyboard/hover/drag-drop modules, update README
+
+- New tests for nested iframes (09_Iframe.spec.ts)
+- New tests for keyboard actions, hover menus, drag & drop (10_Keyboard_Hover_Drag_Drop)
+- New JS Alert/Confirm/Prompt tests (11_JS_Alerts)
+- Create learning.md with full keyboard & mouse API reference
+- Update README with new module entries and topics coverage
+- Clean up stale placeholder folders (09-Component-Testing, 10-API-Testing, 11-Visual-Testing)
+- Fix viewport config for maximized window
+
+Co-authored-by: CommandCodeBot <noreply@commandcode.ai>
